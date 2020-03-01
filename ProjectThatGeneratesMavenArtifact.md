@@ -4,5 +4,6 @@
 - The build tool used is gradle (groovy)
 - The project is unit tested by Junit4
 - The master branch is protected. (Direct commits are not possible)
-- 
+- New version of the artifact is generated when a any pull request is merged to the master branch
+- When a feature branch is pushed, a alpha/beta version of the artifact is produced if the commit is tagged with alpha*
 
