@@ -1,4 +1,4 @@
-# GitHub Flow (Slightly Adjusted)
+# GitHub Flow
 
 There are many articles in the internet that explains about the branching model. The core of it is captured here. For more descriptive or elaborative information please refer other articles.
 
