@@ -72,5 +72,5 @@ The artifacts produced will be versioned as per [semantic versioning](https://se
 * [MajorVersion].[MinorVersion]-[test]-[time]-[8 char git sha]
 * date is in yyyy-MM-dd-HH-mm-ss format
 
-### Overview of versioning
+### Snapshot of versioning
 ![Versioning Image](images/version.png)
