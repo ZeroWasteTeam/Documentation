@@ -6,6 +6,7 @@ This document explains the build system designed and incorporated in Zero Waste 
 * The Git branching stratergy using in the project
 * Versioning stratergy
 * Steps involved in setting up a new repo
+* Build triggers
 
 ## Vision
 
@@ -36,7 +37,16 @@ The code is versioned in Git repositories by the Zero Waste Team. The CI system 
 
 ## Branching Stratergy
 
-When using a git repository, its important have a proper branching stratery in place. There are many popular branching stratergies such as Git Flow, Github Flow, GitLab Flow, Release Flow, etc...
+When using a git repository, its important have a proper branching stratery in place. There are many popular branching stratergies such as [Git Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow), [Github Flow](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/github-flow), [GitLab Flow](https://docs.gitlab.com/ee/topics/gitlab_flow.html), [Release Flow](https://docs.microsoft.com/en-us/azure/devops/learn/devops-at-microsoft/release-flow), etc...
+
+The appropriate branching model for the project has to be decided based on several factors. They are listed below
+* The type of product (Libraries, Desktop application, Mobile application, Monolithic Web applicaiton, Microservice based Web application)
+* The number of developers working on the product
+* The experience level of the developers
+* The release cycle of the product
+* The number of variants of the product
+
+Based on the above points and a few assumptions, the following are branching stratergies are adopted
 
 * **Library Projects:** GitHub flow will be adopted for library projects (that produce artifacts such as maven, nuget, npm packages)
 * **Web Application Project:** Release flow will be adopted for web application projects (these projects will produce docker images and helm chats as artifacts) 
