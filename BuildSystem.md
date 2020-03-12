@@ -8,6 +8,7 @@ This document explains the build system designed and incorporated in Zero Waste 
 * Build triggers
 * Build System Setup
 * PR build checks
+* Things to be manually implemented
 
 ## Vision
 
