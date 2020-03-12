@@ -7,4 +7,4 @@
 * In GitHub flow, it's very important to maintain the master branch deployable always. This rule could be relaxed a bit here.
 * If there is any bug in the release branch, then the bug could be fixed in the a branch off the release branch and then merged. Or we could cherry pick a commit to the release branch
 * We could also merge the release branch in to master, and delete the release branch once a newer version is deployed to the customers using that release.
-![Multiple Featues Git Hub Flow](/images/release-flow.png)
+![Release Flow](/images/release-flow.png)
