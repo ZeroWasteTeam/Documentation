@@ -56,7 +56,21 @@ The artifacts produced will be versioned as per [semantic versioning](https://se
 
 * Every repository will have a file named "version.txt" in the root of the repository
 * The version.txt will contain the major and minor version in the format <MajorVersion>.<MinorVersion>
-* The version of the artifact build from the master branch will be 
-  * [MajorVersion].[MinorVersion].[BuildNumber] if the build number is 0
-  * [MajorVersion].[MinorVersion].[BuildNumber]-[8 character Git Sha of the commit] if the build number is non zero.
+* The version of the artifact is generated based on the branch
+
+### Master branch build
+* [MajorVersion].[MinorVersion].[BuildNumber] if the build number is 0
+* [MajorVersion].[MinorVersion].[BuildNumber]-[8 char git sha] if the build number is non zero.
 * If the version.txt is modified, the build number is 0, otherwise the number of commits since modification is the build number.
+
+### Release branch build
+* [MajorVersion].[MinorVersion]-[releasename]-[time]-[8 char git sha]
+* date is in yyyy-MM-dd-HH-mm-ss format
+* release name is branch name with prefixing "release-" removed
+
+### Feature branch build
+* [MajorVersion].[MinorVersion]-[test]-[time]-[8 char git sha]
+* date is in yyyy-MM-dd-HH-mm-ss format
+
+### Overview of versioning
+![Versioning Image](images/version.png)
