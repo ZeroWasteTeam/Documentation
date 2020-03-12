@@ -1,8 +1,24 @@
 # Build System (CI)
 
-The system is in place to create binaries that are used for releases and testing.
+This document explains the build system designed and incorporated in Zero Waste Team Project. The document is structured as below
+* The vision of the CI system
+* The tools that make the system
+* The Git branching stratergy using in the project
+* Versioning stratergy
+* Steps involved in setting up a new repo
 
 ## Vision
+
+The code is versioned in Git repositories by the Zero Waste Team. The CI system is envisioned to be build around the git repositories that has the following goals met. 
+* On checkin/push/merge in to specific branches, the solution is build, unit tested and artifact is published
+* The most important customer of the CI system is the developement team. And the CI system should serve the development team by meeting the following
+  * The CI system would be set up every time a new repo is created. It must be very easy to set it up. The setup should take utmost 10 mins.
+  * The builds should be fast and unwanted tasks should not happen in the build
+  * The builds would be more frequent in the working hours and less in the non working hours. So the infrastructure should be elastic
+  * The system should give clear version numbers for the artifacts
+  * There should be traceability between the artifact and git commit
+  * There should be good dash board that gives the overall picture of various projects in the organization
+  
 
 ### Setup friendly
 Dev team being the major customer, this system is designed to enable the developers. When a new repository is created, the developers have to configure the build system for it. The build system is so designed, that the developer should be able to get the build system up for a new repository with in 10 minutes
