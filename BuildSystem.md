@@ -2,7 +2,7 @@
 
 This document explains the build system designed and incorporated in Zero Waste Team Project. The document is structured as below
 * [Vision](BuildSystem.md#vision)
-* The tools that make the system
+* [Tools](BuildSystem.md#tools)
 * The Git branching stratergy using in the project
 * Versioning stratergy
 * Steps involved in setting up a new repo
