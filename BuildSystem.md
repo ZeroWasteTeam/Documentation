@@ -17,14 +17,13 @@ The code is versioned in Git repositories by the Zero Waste Team. The CI system 
   * The builds would be more frequent in the working hours and less in the non working hours. So the infrastructure should be elastic
   * The system should give clear version numbers for the artifacts
   * There should be traceability between the artifact and git commit
-  * There should be good dash board that gives the overall picture of various projects in the organization
-  
-
-### Setup friendly
-Dev team being the major customer, this system is designed to enable the developers. When a new repository is created, the developers have to configure the build system for it. The build system is so designed, that the developer should be able to get the build system up for a new repository with in 10 minutes
-
-### Consumption friendly
-When the build system produces artifacts such as folder or zip files, it not evident for the operation team how these artifacts need to used. On the other hand, when the build system produces artifacts such as maven, nuget, npm, docker or helm artificats, it's extremely clear for the operations team (or the dev team) on how to consume them. To facilitate easy consumption of the build artifacts, the build system shall produce standard artifacts such as maven, nuget, npm, docker or helm artifacts.
+  * There should be good dashboard that gives the overall picture of various projects in the organization
+  * The system should provide a mechanism to share libraries (such as Maven, Nuget, Npm) between project 
+* The needs of the Operation team should be clearly
+  * The artifacts produced by the system have to deployed. When the artifact is a zipped file or folder, the deployment procedure would not be clear for the operation team. So the artifact has to be documented standard artifacts such as docker images, helm charts, etc...
+* The needs of the management has to be met
+  * The solution should be cost effective
+  * The amount of developers needed to maintain the system has to be minimal or zero.
 
 ## Tools
 * **Repo:** The source code is maintained in git repositories that are hosted in GitHub
