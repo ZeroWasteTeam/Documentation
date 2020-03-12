@@ -26,14 +26,13 @@ The code is versioned in Git repositories by the Zero Waste Team. The CI system 
   * The amount of developers needed to maintain the system has to be minimal or zero.
 
 ## Tools
-* **Repo:** The source code is maintained in git repositories that are hosted in GitHub
-* **Build Tool:** The build tool used in [GitHub Actions](https://help.github.com/en/actions) 
-* **Artifactory:** The artifactory used is [GitHub packages](https://help.github.com/en/packages/publishing-and-managing-packages/about-github-packages). It supports Maven, Npm, Nuget, Docker and many more. However it does not support Helm Charts. A custom helm chart repository can be however easily created github repository.
+* **Repo:** The source code is maintained in git repositories that are hosted in **GitHub**
+* **Build Tool:** The build tool used in **[GitHub Actions](https://help.github.com/en/actions)** 
+* **Artifactory:** The artifactory used is **[GitHub packages](https://help.github.com/en/packages/publishing-and-managing-packages/about-github-packages)**
 
-**Note 1**: Circle CI and Travis CI are better and more mature than Git Hub actions in many aspects. The lack of organization level secrets is a limitation to be over come in git hub actions. Git hub actions is choosen as it provides easy integration to git hub packages and git hub repositories. Effective dashboarding mechanism is also not available in GitHub Actions.
+**Note 1**: [Circle CI](https://circleci.com/) and [Travis CI](https://travis-ci.org/) are better and more mature than [GitHub Actions](https://help.github.com/en/actions) in many aspects such as dashboarding. [GitHub Actions](https://help.github.com/en/actions) lacks organizational secrets where as [Circle CI](https://circleci.com/) has it. GitHub actions short fall in these two aspects is overlooked as billing becomes easier. (One bill for Repositories and build tool). The integration is also out of the box between GitHub repos and GitHub Actions.
 
-**Note 2**: JFrog Artifactory and ProGet are better than GitHub Packages in many aspects. The choice of GitHub packages is due to the integration with other build tools. It also provides an easy mechanism to download these packages for local developement. As it's integrated with the repository, there is no need to have separate credentials. The Git Hub packages are per repository. This when used as is creates many binary repositories. This has to be worked around
-
+**Note 2**: [JFrog Artifactory](https://jfrog.com/artifactory/) and [ProGet](https://inedo.com/proget) are better than GitHub Packages in few aspects. Both JFrog Artifactory and ProGet supports npm, maven, nuget, docker and helm. Where as GitHub Packages does not support help out of the box. GitHub Package's default behaviour is artifact repository per code repository. This is clearly not convenient to use. As the consumers have to consume from several artifact repositories. The access management of GitHub packages makes it easy and secure to consume artifacts for local and ci builds. Artifactory or ProGet as managed services is either not available or expensive. To save the effort of hosting artifact respositories and benefit from the feature provided by GitHub packages, it is choosen 
 
 ## Branching Stratergy
 
