@@ -5,8 +5,9 @@ This document explains the build system designed and incorporated in Zero Waste 
 * [Tools](BuildSystem.md#tools)
 * [Branching stratergy](BuildSystem.md#branching-stratergy)
 * [Versioning stratergy](BuildSystem.md#versioning-stratergy)
-* Steps involved in setting up a new repo
 * Build triggers
+* Build System Setup
+* PR build checks
 
 ## Vision
 
