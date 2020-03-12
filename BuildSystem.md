@@ -50,3 +50,6 @@ Based on the above points and a few assumptions, the following are branching str
 
 * **Library Projects:** [GitHub flow](GitHubFlow.md) will be adopted for library projects (that produce artifacts such as maven, nuget, npm packages)
 * **Web Application Project:** [Release flow](ReleaseFlow.md) will be adopted for web application projects (these projects will produce docker images and helm chats as artifacts) 
+
+## Versioning Stratergy
+The artifacts produced will be versioned as per [semantic versioning](https://semver.org/)
