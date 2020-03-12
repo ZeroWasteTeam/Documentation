@@ -1,7 +1,7 @@
 # Build System (CI)
 
 This document explains the build system designed and incorporated in Zero Waste Team Project. The document is structured as below
-* The vision of the CI system
+* [Vision](BuildSystem.md#vision)
 * The tools that make the system
 * The Git branching stratergy using in the project
 * Versioning stratergy
