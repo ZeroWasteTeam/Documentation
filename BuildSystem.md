@@ -53,3 +53,10 @@ Based on the above points and a few assumptions, the following are branching str
 
 ## Versioning Stratergy
 The artifacts produced will be versioned as per [semantic versioning](https://semver.org/)
+
+* Every repository will have a file named "version.txt" in the root of the repository
+* The version.txt will contain the major and minor version in the format <MajorVersion>.<MinorVersion>
+* The version of the artifact build from the master branch will be 
+  * <MajorVersion>.<MinorVersion>.<BuildNumber> if the build number is 0
+  * <MajorVersion>.<MinorVersion>.<BuildNumber>-<8 character Git Sha of the commit> if the build number is non zero 0.
+* If the version.txt is modified, the build build number is 0. If the version.txt is not modified the number of commits since modification is the build number
