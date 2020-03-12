@@ -48,5 +48,5 @@ The appropriate branching model for the project has to be decided based on sever
 
 Based on the above points and a few assumptions, the following are branching stratergies are adopted
 
-* **Library Projects:** GitHub flow will be adopted for library projects (that produce artifacts such as maven, nuget, npm packages)
+* **Library Projects:** [GitHub flow](GitHubFlow.md) will be adopted for library projects (that produce artifacts such as maven, nuget, npm packages)
 * **Web Application Project:** Release flow will be adopted for web application projects (these projects will produce docker images and helm chats as artifacts) 
