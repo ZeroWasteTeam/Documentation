@@ -11,9 +11,9 @@ Dev team being the major customer, this system is designed to enable the develop
 When the build system produces artifacts such as folder or zip files, it not evident for the operation team how these artifacts need to used. On the other hand, when the build system produces artifacts such as maven, nuget, npm, docker or helm artificats, it's extremely clear for the operations team (or the dev team) on how to consume them. To facilitate easy consumption of the build artifacts, the build system shall produce standard artifacts such as maven, nuget, npm, docker or helm artifacts.
 
 ## Tools
-**Repo:** The source code is maintained in git repositories that are hosted in GitHub
-**Build Tool:** The build tool used in GitHub Actions 
-**Artifactory:** The artifactory used is GitHub packages. It supports Maven, Npm, Nuget, Docker and many more. However it does not support Helm Charts. A custom helm chart repository can be however easily created github repository.
+* **Repo:** The source code is maintained in git repositories that are hosted in GitHub
+* **Build Tool:** The build tool used in GitHub Actions 
+* **Artifactory:** The artifactory used is GitHub packages. It supports Maven, Npm, Nuget, Docker and many more. However it does not support Helm Charts. A custom helm chart repository can be however easily created github repository.
 
 **Note 1**: Circle CI and Travis CI are better and more mature than Git Hub actions in many aspects. The lack of organization level secrets is a limitation to be over come in git hub actions. Git hub actions is choosen as it provides easy integration to git hub packages and git hub repositories. Effective dashboarding mechanism is also not available in GitHub Actions.
 
