@@ -13,7 +13,7 @@ When the build system produces artifacts such as folder or zip files, it not evi
 ## Tools
 * **Repo:** The source code is maintained in git repositories that are hosted in GitHub
 * **Build Tool:** The build tool used in [GitHub Actions](https://help.github.com/en/actions) 
-* **Artifactory:** The artifactory used is GitHub packages. It supports Maven, Npm, Nuget, Docker and many more. However it does not support Helm Charts. A custom helm chart repository can be however easily created github repository.
+* **Artifactory:** The artifactory used is [GitHub packages](https://help.github.com/en/packages/publishing-and-managing-packages/about-github-packages). It supports Maven, Npm, Nuget, Docker and many more. However it does not support Helm Charts. A custom helm chart repository can be however easily created github repository.
 
 **Note 1**: Circle CI and Travis CI are better and more mature than Git Hub actions in many aspects. The lack of organization level secrets is a limitation to be over come in git hub actions. Git hub actions is choosen as it provides easy integration to git hub packages and git hub repositories. Effective dashboarding mechanism is also not available in GitHub Actions.
 
