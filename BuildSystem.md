@@ -79,15 +79,19 @@ The artifacts produced will be versioned as per [semantic versioning](https://se
 
 
 ## Imposed Constraints
-* It shall not be possible to push to master (release-*) branch 
-* Any code has to be added to the master (release-*) should be through pull request that is reviewed
-* The pull requests should be mergable only when the source branch is based on the lastest commit of the destination branch
-* The pull requests should be mergable only when the PR build executes without any error
-  * The PR build should make sure that merged branch is compilable
-  * The PR build should make sure that all Unit Tests are running successfully in the merged branch
-  * The PR build should make sure that when there is a version update, no other files are modified
-  * The PR build should make sure that version update is possible only in the master branch
-  * The PR build should make sure that the version is correctly incremented
+* There are some constraints imposed in the CI system. These constraints are imposed for maintiaining the quality of the software and for traceability purposed.
+* Contraints are imposed through GitHub settings and PR build.
+* The constraints for all the repositories (libraries and web applications) are as below
+  * Pushing commits to remote master is forbidden. Commits have to be merged in master through pull requests.
+  * It is required that source branch is up to date for a pull request. (We could simply say, the feature branch must be master on the latest master)
+  * When a version is updated, the version has to properly incremented. Decrementing version is not allowed
+  * When a version is updated, there shall be no other changes in that pull request
+  * The code after pull request merge should be buildable without any compilation errors or unit test failures
+* The additional contraints for web application repositories are a below
+  * Pushing commits to remote branch whose name starts with "release-" is forbidden. Commits have to be merged through pull requests.
+  * It is requried the source branch is up to date.
+  * Version update is not allowed while merging to release branches
+  * The code after pull request merge should be buildable without any compilation errors or unit test failures
 
 ### Caveats
 * It's at this moment not restrict pushing a non-existant branch named release-* When pushed the dashboard should show the error
