@@ -7,7 +7,7 @@ This document explains the build system designed and incorporated in Zero Waste 
 * [Versioning stratergy](BuildSystem.md#versioning-stratergy)
 * Build triggers
 * Build System Setup
-* PR build checks
+* Imposed Constraints
 * Things to be manually implemented
 
 ## Vision
