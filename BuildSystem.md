@@ -5,7 +5,7 @@ This document explains the build system designed and incorporated in Zero Waste 
 * [Tools](BuildSystem.md#tools)
 * [Branching stratergy](BuildSystem.md#branching-stratergy)
 * [Versioning stratergy](BuildSystem.md#versioning-stratergy)
-* Imposed Constraints
+* [Imposed Constraints](BuildSystem.md#imposed-constraints)
 * Build triggers
 * Build System Setup
 * Things to be manually implemented
