@@ -93,8 +93,8 @@ The artifacts produced will be versioned as per [semantic versioning](https://se
   * Version update is not allowed while merging to release branches
   * The code after pull request merge should be buildable without any compilation errors or unit test failures
 
-### Caveats
-* It's at this moment not restrict pushing a non-existant branch named release-* When pushed the dashboard should show the error
+### Caveat
+* It's at this moment not restrict pushing to a remote non-existant branch named release-* As a work around, when pushed the dashboard should show a warning
 
 ## Build Triggers
 * A PR build should be triggered when a pull request to raised to merge to master or release-*
