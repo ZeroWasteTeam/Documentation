@@ -76,3 +76,27 @@ The artifacts produced will be versioned as per [semantic versioning](https://se
 
 ### Snapshot of versioning
 ![Versioning Image](images/version.png)
+
+
+## Imposed Constraints
+* It shall not be possible to push to master (release-*) branch 
+* Any code has to be added to the master (release-*) should be through pull request that is reviewed
+* The pull requests should be mergable only when the source branch is based on the lastest commit of the destination branch
+* The pull requests should be mergable only when the PR build executes without any error
+  * The PR build should make sure that merged branch is compilable
+  * The PR build should make sure that all Unit Tests are running successfully in the merged branch
+  * The PR build should make sure that when there is a version update, no other files are modified
+  * The PR build should make sure that version update is possible only in the master branch
+  * The PR build should make sure that the version is correctly incremented
+
+### Caveats
+* It's at this moment not restrict pushing a non-existant branch named release-* When pushed the dashboard should show the error
+
+## Build Triggers
+* A PR build should be triggered when a pull request to raised to merge to master or release-*
+* An artifact build should be triggered when code is merged in master or release-*
+* Due to limitation of the artifact repository, all the builds might not be stored forever in the artifact repository.
+* A build should be triggered when a commit is tagged as test-* and pushed (Suggestion is tag as test-time-username, time in yyyy-MM-dd-hh-mm-ss format)
+* A build should be triggered when a release-* branch commit is tagged as rerelease-* (Suggestion is tag as rerelease-time-username, time in yyyy-MM-dd-hh-mm-ss format)
+* A build should be triggered when a master branch commit is tagged as rebuild-* (Suggestion is tag as rebuild-time-username, time in yyyy-MM-dd-hh-mm-ss format)
+
