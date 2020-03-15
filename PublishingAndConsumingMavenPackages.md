@@ -1,6 +1,6 @@
 # Publishing and Consuming Maven Packages
 
-With the help of git hub packages. It would be easy to publish and consume maven packages. [JitPack] (https://jitpack.io/) would be another way to do this. At this point JitPack is not explored enough. In this document, we will stick with Github packages. There are couple of ways we could do this with GitHub packages.
+With the help of git hub packages. It would be easy to publish and consume maven packages. [JitPack](https://jitpack.io/) would be another way to do this. At this point JitPack is not explored enough. In this document, we will stick with Github packages. There are couple of ways we could do this with GitHub packages.
 
 ## Stratergies
 
