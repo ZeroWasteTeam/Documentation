@@ -114,7 +114,7 @@ The artifacts produced will be versioned as per [semantic versioning](https://se
   * for MavenJavaPackage - "MavenJava"
   * for JavaWebApplication -"WebJava"
 * Copy the contents of zip in to the .github folder
-  * For MavenJavaPackage built by gradle this
+  * For MavenJavaPackage built by gradle [this](https://wondertools.github.io/GitHubDownloader/#/home?url=https://github.com/ZeroWasteTeam/SampleJavaMavenPackage/tree/master/.github)
   * For JavaWebApplication built by gradle this
 * Commit all changes till now and push to origin
 * Create a new branch name 'firstbranch', in the branch add a file first.txt with contents 'hello'. Commit the changes and push
