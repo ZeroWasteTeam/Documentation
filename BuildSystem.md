@@ -7,7 +7,7 @@ This document explains the build system designed and incorporated in Zero Waste 
 * [Versioning stratergy](BuildSystem.md#versioning-stratergy)
 * [Imposed Constraints](BuildSystem.md#imposed-constraints)
 * [Build triggers](BuildSystem.md#build-triggers)
-* Setting up a repository(BuildSystem.md#setting-up-repository)
+* [Setting up a repository](BuildSystem.md#setting-up-repository)
 
 
 ## Vision
