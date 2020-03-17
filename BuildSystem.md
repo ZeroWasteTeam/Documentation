@@ -106,4 +106,17 @@ The artifacts produced will be versioned as per [semantic versioning](https://se
 * Based on the branch requested in the buildRequestor tool, the build could build a test artifact, release artifact or full versioned artifact
 
 ## Setting up repository
-
+* Create a git hub repository
+* Clone the empty repository
+* In the root of the repository, create a folder named .github
+* Create a file named version.txt in the root of the repo. The contents of this file should be 0.1 without a new line
+* Create a file named appType.txt, the contents of this file should be
+  * for MavenJavaPackage - "MavenJava"
+  * for JavaWebApplication -"WebJava"
+* Copy the contents of zip in to the .github folder
+  * For MavenJavaPackage built by gradle this
+  * For JavaWebApplication built by gradle this
+* Commit all changes till now and push to origin
+* Create a new branch name 'firstbranch', in the branch add a file first.txt with contents 'hello'. Commit the changes and push
+* Create a pull request for the newly created branch. (This pull request is a dummy pull request to ensure the checks are run and recognized)
+* 
