@@ -119,4 +119,20 @@ The artifacts produced will be versioned as per [semantic versioning](https://se
 * Commit all changes till now and push to origin
 * Create a new branch name 'firstbranch', in the branch add a file first.txt with contents 'hello'. Commit the changes and push
 * Create a pull request for the newly created branch. (This pull request is a dummy pull request to ensure the checks are run and recognized)
-* 
+Go to settings of the project repository, and ensure the following
+* In features
+  * Uncheck "Wikis"
+  * Uncheck "Restrict editing to users in teams with push access only"
+  * Uncheck "Issues"
+  * Uncheck "Sponsorships"
+  * Uncheck "Projects"
+* In Data Services
+  * Make sure "Security alerts" is checked
+* Merge Button
+  * Uncheck "Allow merge commits"
+  * Make sure "Allow squash merging" is checked
+  * Uncheck "Allow rebase merging"
+  * Uncheck "Automatically delete head branches"
+
+
+In Settings page, go to branches
