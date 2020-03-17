@@ -145,4 +145,5 @@ Go to settings of the project repository, and ensure the following
 * For Web applications
   * Add a new rule with the same details for the branch pattern named "release-*"
 
+## Examples
 
