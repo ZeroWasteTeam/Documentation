@@ -148,3 +148,4 @@ Go to settings of the project repository, and ensure the following
 ## Examples
 
 * A sample Maven package project in Java build using gradle is [here](https://github.com/ZeroWasteTeam/SampleJavaMavenPackage)
+* A sample Maven package consuming Java project build using gradle is [here](https://github.com/ZeroWasteTeam/SampleMavenConsumingJava)
