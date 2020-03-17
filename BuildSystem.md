@@ -87,6 +87,8 @@ The artifacts produced will be versioned as per [semantic versioning](https://se
   * When a version is updated, the version has to properly incremented. Decrementing version is not allowed
   * When a version is updated, there shall be no other changes in that pull request
   * The code after pull request merge should be buildable without any compilation errors or unit test failures
+  * The commits in the master and release-* branches shall have a linear commit history. This means we will not allow a merge commit
+  * Rebase merge commit also will not be allowed. The only merge type that will be supported is squash merge
 * The additional contraints for web application repositories are a below
   * Pushing commits to remote branch whose name starts with "release-" is forbidden. Commits have to be merged through pull requests.
   * It is requried the source branch is up to date.
@@ -98,9 +100,8 @@ The artifacts produced will be versioned as per [semantic versioning](https://se
 
 ## Build Triggers
 * A PR build should be triggered when a pull request to raised to merge to master or release-*
-* An artifact build should be triggered when code is merged in master or release-*
+* A master build should be triggered when code is merged in master or release-*
 * Due to limitation of the artifact repository, all the builds might not be stored forever in the artifact repository.
-* A build should be triggered when a commit is tagged as test-* and pushed (Suggestion is tag as test-time-username, time in yyyy-MM-dd-hh-mm-ss format)
-* A build should be triggered when a release-* branch commit is tagged as rerelease-* (Suggestion is tag as rerelease-time-username, time in yyyy-MM-dd-hh-mm-ss format)
-* A build should be triggered when a master branch commit is tagged as rebuild-* (Suggestion is tag as rebuild-time-username, time in yyyy-MM-dd-hh-mm-ss format)
+* A master build should be triggered when a build requested through the buildRequestor tool. This tool shall be replaces as web application.
+* Based on the branch requested in the buildRequestor tool, the build could build a test artifact, release artifact or full versioned artifact
 
