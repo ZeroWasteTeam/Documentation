@@ -6,9 +6,9 @@ This document explains the build system designed and incorporated in Zero Waste 
 * [Branching stratergy](BuildSystem.md#branching-stratergy)
 * [Versioning stratergy](BuildSystem.md#versioning-stratergy)
 * [Imposed Constraints](BuildSystem.md#imposed-constraints)
-* Build triggers
-* Build System Setup
-* Things to be manually implemented
+* [Build triggers](BuildSystem.md#build-triggers)
+* Setting up a repository(BuildSystem.md#setting-up-repository)
+
 
 ## Vision
 
@@ -104,4 +104,6 @@ The artifacts produced will be versioned as per [semantic versioning](https://se
 * Due to limitation of the artifact repository, all the builds might not be stored forever in the artifact repository.
 * A master build should be triggered when a build requested through the buildRequestor tool. This tool shall be replaces as web application.
 * Based on the branch requested in the buildRequestor tool, the build could build a test artifact, release artifact or full versioned artifact
+
+## Setting up repository
 
