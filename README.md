@@ -7,3 +7,13 @@ This repository documents CI CD pipleline and Operations part for fictious web a
 * Operations
 
 ![Overview](/images/Overview.png)
+
+## Things to be done
+* Maven Package consuming sample project has to be created
+* The dashboarding needs of the CI system has to be documented
+* The buildRequestor UI has to be build
+* The Java web application sample project has to be created
+* Helm packaging has to be explored
+* Setting up Helm repository in GitHub and publishing through GitHub actions explored
+* CD to be set up
+* Operations and environment provisioning to be set up
