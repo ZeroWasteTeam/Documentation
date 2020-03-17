@@ -6,4 +6,4 @@ This repository documents CI CD pipleline and Operations part for fictious web a
 * CD
 * Operations
 
-![Overview](/images/overview.png)
+![Overview](/images/Overview.png)
