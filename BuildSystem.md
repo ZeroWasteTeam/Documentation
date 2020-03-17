@@ -133,6 +133,16 @@ Go to settings of the project repository, and ensure the following
   * Make sure "Allow squash merging" is checked
   * Uncheck "Allow rebase merging"
   * Uncheck "Automatically delete head branches"
+* In Settings page, go to branches, click on add rules
+  * Enter the branch name as "master"
+  * Check "Require pull request reviews before merging"
+  * Check "Require status checks to pass before merging"
+  * Check sub section "Require branches to be up to date before merging"
+  * Check sub section "Java PR Build"
+  * Check "Require linear history"
+  * Check "Include administrators"
+  * And then click on "Create"
+* For Web applications
+  * Add a new rule with the same details for the branch pattern named "release-*"
 
 
-In Settings page, go to branches
