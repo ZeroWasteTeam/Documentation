@@ -9,7 +9,7 @@ This repository documents CI CD pipleline and Operations part for fictious web a
 ![Overview](/images/Overview.png)
 
 ## Things to be done
-* Maven Package consuming sample project has to be created
+* Documenting the maven library consuming app has to be done (env variable, local and server build, and caveat of multiple repos)
 * The dashboarding needs of the CI system has to be documented
 * The buildRequestor UI has to be build
 * The Java web application sample project has to be created
