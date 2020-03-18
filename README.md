@@ -10,6 +10,7 @@ This repository documents CI CD pipleline and Operations part for fictious web a
 
 ## Things to be done
 * Documenting the maven library consuming app has to be done (env variable, local and server build, and caveat of multiple repos)
+* Setting up of static code analysis with some Saas platform such as (https://sonarcloud.io/)
 * The dashboarding needs of the CI system has to be documented
 * The buildRequestor UI has to be build
 * The Java web application sample project has to be created
