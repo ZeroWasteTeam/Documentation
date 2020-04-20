@@ -68,7 +68,7 @@ The artifacts produced will be versioned as per [semantic versioning](https://se
 ### Release branch build
 * [MajorVersion].[MinorVersion]-[releasename]-[time]-[8 char git sha]
 * date is in yyyy-MM-dd-HH-mm-ss format
-* release name is branch name with prefixing "release-" removed
+* release name is branch name with prefixing "rel-" removed
 
 ### Feature branch build
 * [MajorVersion].[MinorVersion]-[test]-[time]-[8 char git sha]
