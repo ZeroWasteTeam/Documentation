@@ -87,20 +87,20 @@ The artifacts produced will be versioned as per [semantic versioning](https://se
   * When a version is updated, the version has to properly incremented. Decrementing version is not allowed
   * When a version is updated, there shall be no other changes in that pull request
   * The code after pull request merge should be buildable without any compilation errors or unit test failures
-  * The commits in the master and release-* branches shall have a linear commit history. This means we will not allow a merge commit
+  * The commits in the master and rel-* branches shall have a linear commit history. This means we will not allow a merge commit
   * Rebase merge commit also will not be allowed. The only merge type that will be supported is squash merge
 * The additional contraints for web application repositories are a below
-  * Pushing commits to remote branch whose name starts with "release-" is forbidden. Commits have to be merged through pull requests.
+  * Pushing commits to remote branch whose name starts with "rel-" is forbidden. Commits have to be merged through pull requests.
   * It is requried the source branch is up to date.
   * Version update is not allowed while merging to release branches
   * The code after pull request merge should be buildable without any compilation errors or unit test failures
 
 ### Caveat
-* It's at this moment not restrict pushing to a remote non-existant branch named release-* As a work around, when pushed the dashboard should show a warning
+* It's at this moment not restrict pushing to a remote non-existant branch named rel-* As a work around, when pushed the dashboard should show a warning
 
 ## Build Triggers
-* A PR build should be triggered when a pull request to raised to merge to master or release-*
-* A master build should be triggered when code is merged in master or release-*
+* A PR build should be triggered when a pull request to raised to merge to master or rel-*
+* A master build should be triggered when code is merged in master or rel-*
 * Due to limitation of the artifact repository, all the builds might not be stored forever in the artifact repository.
 * A master build should be triggered when a build requested through the buildRequestor tool. This tool shall be replaces as web application.
 * Based on the branch requested in the buildRequestor tool, the build could build a test artifact, release artifact or full versioned artifact
@@ -143,7 +143,7 @@ Go to settings of the project repository, and ensure the following
   * Check "Include administrators"
   * And then click on "Create"
 * For Web applications
-  * Add a new rule with the same details for the branch pattern named "release-*"
+  * Add a new rule with the same details for the branch pattern named "rel-*"
 
 ## Examples
 
