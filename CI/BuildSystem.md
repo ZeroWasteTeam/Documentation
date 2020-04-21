@@ -106,4 +106,4 @@ The artifacts produced will be versioned as per [semantic versioning](https://se
 * Based on the branch requested in the buildRequestor tool, the build could build a test artifact, release artifact or full versioned artifact
 
 ## Setting up repository
-Instructions to set up repositories is depepdant on the language, build system and type of application. Details are available [here](https://github.com/ZeroWasteTeam/Documentation/blob/master/SettingUpRepositories.md)
+Instructions for setting up repositories are [here](SettingUpRepositories.md)
