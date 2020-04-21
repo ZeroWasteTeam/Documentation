@@ -75,7 +75,7 @@ The artifacts produced will be versioned as per [semantic versioning](https://se
 * date is in yyyy-MM-dd-HH-mm-ss format
 
 ### Snapshot of versioning
-![Versioning Image](/Documentation/images/version.png)
+![Versioning Image](images/version.png)
 
 
 ## Imposed Constraints
