@@ -25,8 +25,9 @@ The way a repository is set up is hugely dependent on the type of the repository
  7. Add Repository dispatch workflow
  8. Create a dummy branch and a dummy pull request. This is done to so that the system searches for the workflows.
  9. Create a branch protection rule for "master" branch as detailed here (TODO)
- 
+ 10. There is a bit of tradeoff in consuming maven packages. More information is available [here](MavenPackages.md)
+
  ### Examples
- * This [example](https://github.com/ZeroWasteTeam/SampleJavaMavenPackage) produces a maven package
+ * This [example](https://github.com/ZeroWasteTeam/SampleJavaMavenPackage) produces a maven package.
  * This [example](https://github.com/ZeroWasteTeam/SampleMavenConsumingJava) produces a maven package and also consumes another maven package
   
