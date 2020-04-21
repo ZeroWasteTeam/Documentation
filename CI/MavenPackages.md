@@ -26,7 +26,3 @@ With the help of git hub packages. It would be easy to publish and consume maven
 * In zero waste team, we will adopt maven repository per code repository model
 * It would be better than creating a new user to publish maven packages
 * One more thing to be noted is there can no two packages with the same groupId and artifactId in the same organization even if they are in separate maven repositories.
-
-## Example
-Publisher
-Consumer
