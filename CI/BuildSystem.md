@@ -75,7 +75,7 @@ The artifacts produced will be versioned as per [semantic versioning](https://se
 * date is in yyyy-MM-dd-HH-mm-ss format
 
 ### Snapshot of versioning
-![Versioning Image](images/version.png)
+![Versioning Image](/images/version.png)
 
 
 ## Imposed Constraints
@@ -106,4 +106,5 @@ The artifacts produced will be versioned as per [semantic versioning](https://se
 * Based on the branch requested in the buildRequestor tool, the build could build a test artifact, release artifact or full versioned artifact
 
 ## Setting up repository
+
 Instructions for setting up repositories are [here](SettingUpRepositories.md)
