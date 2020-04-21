@@ -1,11 +1,27 @@
-### Repo setup for a repo coded in Java that is producing a Maven package and build by gradle
+# Setting up a Library Project Repository
 
- * Create a empty repository
- * Add version file to the repo
- * Add app-type file to the repo
- * Add three workflows (PR, Master, Repository Dispatch) to the repo. The work flows are added by adding a yaml file in .github/workflows directory. You can download the yaml files from here (TODO)
- * Create a branch, and raise a pull request. (This pull request is a dummy pull request to search of workflows at PR)
- * Create a branch protection rule for "master" branch as detailed here (TODO)
+## Expectation of the CI system (Build)
+ 1. A master build is triggered when a pull request to master branch is completed. The master build publishes the library artifact.
+ 2. A Repository Dispatch is triggered when the a build is triggered through the [tool](https://zerowasteteam.github.io/build-requestor/). The build publishes the library artifact.
+ 3. A PR build should be mergable only when the below conditions are met
+   1. When the PR build runs successfully (versioning rule and unit tests are met)
+   2. When the PR is review at least by one developer
+   3. The PR branch is based on the lastest version of master   
+ 4. The master branch should support linear version history 
+
+### Setting up of a library Project
+ 1. Create a empty repository
+ 2. Add version file (version.txt) to the repository. The content of the file has to be "<major-version>.<minor-version>"
+ 3. Add app-type file (app-type.txt) to the repository. The content of the file has to be "lib"
+ 4. Add scripts files to the repository
+   1. scripts-build.sh - This script will be called by workflows to build the project.
+   2. scripts-test.sh - This script will be called by the workflows to unit test the project.
+   3. scripts-package.sh - This script will be called by the workflows to publish the project artifacts.
+ 5. Add Master Build workflow. How to add a work flow can be found [here](https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow)
+ 6. Add PR build workflow
+ 7. Add Repository dispatch workflow
+ 8. Create a dummy branch and a dummy pull request. This is done to so that the system searches for the workflows.
+ 9. Create a branch protection rule for "master" branch as detailed here (TODO)
  
  ### Examples
  * This [example](https://github.com/ZeroWasteTeam/SampleJavaMavenPackage) produces a maven package
