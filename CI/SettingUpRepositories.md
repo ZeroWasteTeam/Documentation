@@ -43,7 +43,7 @@ The way a repository is set up is hugely dependent on the type of the repository
    3. The PR branch is based on the lastest version of master   
  4. The master branch should support linear version history 
 
-### Setting up of a library Project
+### Setting up of a Application Project
  1. Create a empty repository
  2. Add version file (version.txt) to the repository. The content of the file has to be "<major-version>.<minor-version>"
  3. Add app-type file (app-type.txt) to the repository. The content of the file has to be "app"
